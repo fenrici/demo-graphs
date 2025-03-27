@@ -3,7 +3,6 @@
     try {
       let getMovies = await fetch('https://swapi.dev/api/films/');
       let movies = await getMovies.json();
-      let title = movies.title;
       console.log(movies);
       return movies;
     } catch (error) {
@@ -21,8 +20,8 @@ getmoviesInfo().then(movies => {
         series: series
     };
     const options = {
-        width: '500px',
-        height: '500px',
+        width: '600px',
+        height: '600px',
         axisY: {
           onlyInteger: true
       }
@@ -45,8 +44,8 @@ async function getCharactersInfo() {
         };
 
         const barChartOptions = {
-            width: '500px',
-            height: '500px',
+            width: '600px',
+            height: '600px',
             axisY: {
                 onlyInteger: true
             }
